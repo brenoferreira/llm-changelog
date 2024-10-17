@@ -51,6 +51,12 @@ Mensagens de commit:
 
 $COMMIT_LOG"
 
+# Check if the -d flag is passed
+if [ "$#" -lt 2 ]; then
+    echo "Prompt:"
+    echo "$PROMPT"
+fi
+
 # Create changelog directory if it doesn't exist
 CHANGELOG_DIR="changelog"
 mkdir -p "$CHANGELOG_DIR"
