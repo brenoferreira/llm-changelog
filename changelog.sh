@@ -6,6 +6,7 @@ if ! command -v llm &> /dev/null; then
     if [[ "$response" == "yes" ]]; then
         echo "running pip install llm..."
         pip install llm
+        llm install llm-ollama
     else
         echo "llm command is required. Exiting..."
         exit 1
